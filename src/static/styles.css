@@ -114,13 +114,58 @@ section h3 {
 }
 
 .participant-list {
-  padding-left: 22px;
+  list-style: none;
+  padding: 0;
   color: #3e4658;
 }
 
-.participant-list li {
-  padding: 2px 0;
+.participant-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 0;
   overflow-wrap: anywhere;
+}
+
+.remove-participant {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #68738a;
+}
+
+.remove-participant:hover {
+  border-color: #ffcdd2;
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.remove-participant:focus-visible {
+  outline: 2px solid #3949ab;
+  outline-offset: 2px;
+}
+
+.remove-participant:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.remove-participant svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
 }
 
 .empty-participants {
