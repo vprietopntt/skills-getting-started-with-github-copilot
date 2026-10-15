@@ -60,18 +60,74 @@ section h3 {
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border: 1px solid #e0e4ee;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(26, 35, 126, 0.06);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.activity-card:hover {
+  border-color: #c5cae9;
+  box-shadow: 0 5px 14px rgba(26, 35, 126, 0.1);
+  transform: translateY(-2px);
 }
 
 .activity-card h4 {
   margin-bottom: 10px;
   color: #0066cc;
+  font-size: 1.15rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participant-section {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid #c7d2fe;
+  border-radius: 7px;
+  background-color: #f1f4ff;
+}
+
+.participant-section h5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+  color: #3949ab;
+  font-size: 1rem;
+}
+
+.participant-count {
+  display: inline-flex;
+  min-width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+  border-radius: 999px;
+  background-color: #dce3ff;
+  color: #283593;
+  font-size: 0.8rem;
+}
+
+.participant-list {
+  padding-left: 22px;
+  color: #3e4658;
+}
+
+.participant-list li {
+  padding: 2px 0;
+  overflow-wrap: anywhere;
+}
+
+.empty-participants {
+  margin-bottom: 0;
+  color: #68738a;
+  font-size: 0.92rem;
+  font-style: italic;
 }
 
 .form-group {
